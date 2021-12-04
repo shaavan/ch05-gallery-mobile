@@ -2,5 +2,9 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>AlbumListPage.qml</file>
+        <file>Style.qml</file>
+        <file>qmldir</file>
+        <file>ToolBarTheme.qml</file>
+        <file>PageTheme.qml</file>
     </qresource>
 </RCC>
