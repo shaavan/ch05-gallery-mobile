@@ -2,6 +2,8 @@
 
 #include <QSqlDatabase>
 #include <QDebug>
+#include <QFile>
+#include <QStandardPaths>
 #include <QSqlError>
 #include <QSqlQuery>
 

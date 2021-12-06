@@ -14,12 +14,13 @@ Page {
         RowLayout {
             anchors.fill: parent
             ToolButton {
-                background: Image {
-                    source: "qrc:/res/icons/back.svg"
-                }
+//                background: Image {
+//                    source: "qrc:/res/icons/back.svg"
+//                }
+                palette.button: Style.text //Temporary supplement for the image.
                 onClicked: {
-                    if(slackView.depth > 1) {
-                        slackView.pop()
+                    if(stackView.depth > 1) {
+                        stackView.pop()
                     }
                 }
             }

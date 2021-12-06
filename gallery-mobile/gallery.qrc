@@ -6,5 +6,6 @@
         <file>qmldir</file>
         <file>ToolBarTheme.qml</file>
         <file>PageTheme.qml</file>
+        <file>InputDialog.qml</file>
     </qresource>
 </RCC>
