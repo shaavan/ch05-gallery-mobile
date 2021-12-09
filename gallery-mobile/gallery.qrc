@@ -7,5 +7,6 @@
         <file>ToolBarTheme.qml</file>
         <file>PageTheme.qml</file>
         <file>InputDialog.qml</file>
+        <file>AlbumPage.qml</file>
     </qresource>
 </RCC>
