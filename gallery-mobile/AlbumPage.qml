@@ -19,6 +19,37 @@ PageTheme {
             onClicked: {
                 dialog.open()
             }
+            ToolButton {
+//                background: Image {
+//                    source: "qrc:/res/icons/album-edit.svg"
+//                }
+                palette.button: Style.text //Temporary supplement for the image.
+                onClicked: {
+                    renameAlbumDialog.open()
+                }
+            }
+            ToolButton {
+//                background: Image {
+//                    source: "qrc:/res/icons/album-delete.svg"
+//                }
+                palette.button: Style.text //Temporary supplement for the image.
+                onClicked: {
+                    albumModel.removeRows(albumRowIndex, 1)
+                    stackView.pop()
+                }
+            }
+        }
+    }
+
+    InputDialog {
+        id: renameAlbumDialog
+        title: "Rename album"
+        label: "Album name:"
+        hint: albumName
+
+        onAccepted: {
+            albumModel.rename(albumRowIndex, editText.text)
+            albumName = editText.text
         }
     }
 
